@@ -1,0 +1,19 @@
+#-------------------------------#
+#			Makefile			#
+#-------------------------------#
+#
+#	cmd command is: mingw32-make -f makefile.gcc
+#	Makefile has a .gcc extension
+#
+CC=gcc
+CFLAGS=-g -Wall -D__USE_FIXED_PROTOTYPES__ -ansi
+#	-Wall 						-- Turn on all warnings
+#	-g    						-- Enable debugging
+#	-D__USE_FIXED_PROTOTYPES__	-- Force the compiler to use the correct headers
+#	-ansi						-- Don't use GNU extensions, stick to ANSI C
+
+main.exe: main.c
+	$(CC) $(CFLAGS) -o main main.c
+
+clean:
+	rm -f main

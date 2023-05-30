@@ -1,0 +1,8 @@
+Plot			Configuration file V1.0
+Filippo			Name
+Graziani		Surname
+Via Accarisi		Address
+133			Number
+Faenza			City
+RA			Province
+Italia			State
